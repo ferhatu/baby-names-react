@@ -1,12 +1,13 @@
 .container {
   background-color: rgb(252, 107, 168);
+  text-align: center;
 }
 .names-container {
   background-color: rgb(152, 194, 185);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 500px;
+  width: 600px;
   margin: auto;
 }
 .name {
@@ -27,4 +28,10 @@ li {
   color: white;
   border-radius: 5px;
   background-color: rgb(37, 37, 33);
+}
+.search {
+  border: 3px solid rgb(5, 118, 153);
+  height: 30px;
+  background-color: turquoise;
+  margin: 7px;
 }
