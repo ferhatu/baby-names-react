@@ -1,14 +1,24 @@
+.container {
+}
 .names-container {
+  background-color: lightblue;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 700px;
+  width: 370px;
+  margin: auto;
 }
 .name {
-  background-color: aqua;
+  margin: 8px;
+  /* background-color: aqua; */
 }
 
 ul,
 li {
   list-style-type: none;
+}
+.f {
+  background-color: pink;
+}
+.m {
+  background-color: rgb(192, 96, 221);
 }
