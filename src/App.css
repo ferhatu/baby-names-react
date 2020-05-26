@@ -1,0 +1,14 @@
+.names-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 700px;
+}
+.name {
+  background-color: aqua;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
