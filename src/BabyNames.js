@@ -2,24 +2,24 @@ import React, { useState } from "react";
 
 function BabyNames(props) {
   const [names, setNames] = useState(props.data);
-  const [inputValue, setInputValue] = useState("");
+  // const [inputValue, setInputValue] = useState("");
 
-  const filteredNames = () => {
+  const filteredNames = (value) => {
     setNames(
-      names.filter((baby) => baby.name.toLowerCase().includes(inputValue))
+      props.data.filter((baby) => baby.name.toLowerCase().includes(value))
     );
   };
 
   const handleChange = (e) => {
-    setInputValue(e.target.value.toLowerCase());
-    filteredNames();
+    // setInputValue(e.target.value.toLowerCase());
+    filteredNames(e.target.value.toLowerCase());
   };
   return (
     <div className="container">
       <div>
         <input
           type="search"
-          value={inputValue}
+          // value={inputValue}
           onChange={handleChange}
           placeholder="Search Name"
           className="search"
@@ -27,7 +27,6 @@ function BabyNames(props) {
       </div>
       <div className="names-container">
         {names
-
           .sort((a, b) => (a.name > b.name ? 1 : -1))
           .map((data) => {
             return (
