@@ -1,5 +1,7 @@
-.container {
+body {
   background-color: rgb(252, 107, 168);
+}
+.container {
   text-align: center;
 }
 .names-container {
@@ -7,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 600px;
+  width: 700px;
   margin: auto;
 }
 .name {
