@@ -1,5 +1,7 @@
 body {
   background-color: rgb(252, 107, 168);
+  font-size: 20px;
+  font-family: d=Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
   text-align: center;
@@ -9,7 +11,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 700px;
+  width: 900px;
   margin: auto;
 }
 .name {
